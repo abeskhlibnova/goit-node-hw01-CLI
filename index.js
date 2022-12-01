@@ -10,7 +10,7 @@ const { program } = require("commander");
   switch (action) {
     case "list":
        const contactsList = await listContacts();
-      console.log(contactsList)
+      console.table(contactsList)
       break;
 
     case "get":
